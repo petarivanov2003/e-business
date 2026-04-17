@@ -34,7 +34,6 @@
             margin-bottom: 30px;
             color: #7f8c8d;
         }
-        /* Grid setup */
         #folder-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
@@ -58,7 +57,6 @@
             background-color: #eef7fe;
             box-shadow: 0 6px 12px rgba(0,0,0,0.1);
         }
-        /* Content sections */
         .folder-content {
             display: none;
             background: white;
@@ -82,10 +80,6 @@
             font-size: 1rem;
         }
         .back-btn:hover { background-color: #c0392b; }
-
-        .media-container {
-            margin-top: 20px;
-        }
         img, video {
             max-width: 100%;
             height: auto;
@@ -93,7 +87,6 @@
             margin: 15px 0;
             border-radius: 8px;
             border: 1px solid #eee;
-            background: #fafafa;
         }
         .link-item {
             display: block;
@@ -105,13 +98,10 @@
             text-decoration: none;
             word-break: break-all;
         }
-        .link-item:hover { background: #eef7fe; }
-        
         iframe {
             width: 100%;
             height: 500px;
             border: 1px solid #ddd;
-            margin-top: 15px;
         }
         .video-grid {
             display: grid;
@@ -129,7 +119,7 @@
     <div class="container">
         <div id="main-view">
             <div class="welcome-msg">
-                <p>Добре дошли в моето портфолио. Изберете папка, за да видите материалите.</p>
+                <p>Изберете папка, за да видите материалите.</p>
             </div>
             
             <div id="folder-grid">
@@ -147,7 +137,7 @@
         </div>
 
         <div id="upr1" class="folder-content">
-            <button class="back-btn" onclick="closeFolders()">← Назад към списъка</button>
+            <button class="back-btn" onclick="closeFolders()">← Назад</button>
             <h2>Упражнение 1</h2>
             <a href="https://cutt.ly/1tHj6dT3" class="link-item" target="_blank">🔗 Отвори линк към упражнението</a>
         </div>
@@ -156,11 +146,9 @@
             <button class="back-btn" onclick="closeFolders()">← Назад</button>
             <h2>Упражнение 2</h2>
             <a href="https://new.nra.bg/wps/portal/egov/aktualno/7adc71b4-d489-474c-8119-b503a09aa572/" class="link-item" target="_blank">🔗 Линк към сайта на НАП</a>
-            <div class="media-container">
-                <p>Инфографики:</p>
-                <img src="infograma1.png" alt="infograma1.png (Липсва файл?)">
-                <img src="infograma2.png" alt="infograma2.png (Липсва файл?)">
-            </div>
+            <p>Инфографики:</p>
+            <img src="infograma2.png" alt="infograma2.png">
+            <img src="infograma1.png" alt="infograma1.png">
         </div>
 
         <div id="upr3" class="folder-content">
@@ -178,17 +166,15 @@
         <div id="upr5" class="folder-content">
             <button class="back-btn" onclick="closeFolders()">← Назад</button>
             <h2>Упражнение 5</h2>
-            <video controls><source src="ad.mp4" type="video/mp4">Вашият браузър не поддържа видео.</video>
+            <video controls><source src="ad.mp4" type="video/mp4"></video>
         </div>
 
         <div id="upr6" class="folder-content">
             <button class="back-btn" onclick="closeFolders()">← Назад</button>
             <h2>Упражнение 6</h2>
             <div class="video-grid">
-                <img src="s1.png" alt="s1"> <img src="s2.png" alt="s2"> <img src="s3.png" alt="s3">
-                <img src="s4.png" alt="s4"> <img src="s5.png" alt="s5"> <img src="s6.png" alt="s6">
-                <img src="s7.png" alt="s7"> <img src="s8.png" alt="s8"> <img src="s9.png" alt="s9">
-                <img src="s10.png" alt="s10">
+                <img src="s1.png"> <img src="s2.png"> <img src="s3.png"> <img src="s4.png"> <img src="s5.png">
+                <img src="s6.png"> <img src="s7.png"> <img src="s8.png"> <img src="s9.png"> <img src="s10.png">
             </div>
         </div>
 
@@ -208,9 +194,9 @@
             <button class="back-btn" onclick="closeFolders()">← Назад</button>
             <h2>Упражнение 9</h2>
             <div class="video-grid">
-                <video controls><source src="mobile1.MOV">Видео 1</video>
-                <video controls><source src="mobile2.MOV">Видео 2</video>
-                <video controls><source src="mobile3.MOV">Видео 3</video>
+                <video controls><source src="mobile1.MOV"></video>
+                <video controls><source src="mobile2.MOV"></video>
+                <video controls><source src="mobile3.MOV"></video>
             </div>
         </div>
 
@@ -219,7 +205,7 @@
             <h2>Упражнение 10</h2>
             <iframe src="upr10.pdf"></iframe>
             <br>
-            <a href="upr10.pdf" download class="link-item">⬇ Изтегли PDF файла тук</a>
+            <a href="upr10.pdf" download class="link-item">⬇ Изтегли PDF тук</a>
         </div>
 
     </div>
